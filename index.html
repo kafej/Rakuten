@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Rakuten">
+	<meta name="author" content="Michael Zbyl">
+
+	<title>Rakuten - Example</title>
+
+	<link href="css/default.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+			$('.popularItem, .producItem').hover(function () {
+				$(this).find('img').css('opacity', '0.9');
+				$(this).find('a').css('text-decoration', 'underline');
+			},
+			function () {
+				$(this).find('img').css('opacity', '1');
+				$(this).find('a').css('text-decoration', 'none');
+			});
+		})
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<p class="logo"></p>
+		<p class="text">Buy from Japan's #1 Shopping Site</p>
+		<p class="language"><a href="">Poland / English / PLN</a></p>
+		<div class="clear-right"></div>
+		<nav class="welcome">
+			<ul>
+				<li>Welcome,<a href="">Sign in</a></li>
+				<li>or<a href="">register.</a></li>
+				<li id="purchaseHistory"><a href="">Purchase History</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">FAQ</a></li>
+				<li id="cart">
+					<a href="">Cart</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="clear"></div>
+
+	<!-- Main Search -->
+	<div class="SearchMain">
+		<nav class="SearchNav">
+			<ul>
+				<li class="active"><a href="">Rakuten Global Market</a></li>
+				<li><a href="">Getting Started</a></li>
+				<li id="specialOffer"><a href="">Special Offers</a></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+		<div class="SearchBar">
+			<form id="Search">
+				<select name="" id="searchSelect">
+					<option value="1">All Categories</option>
+					<option value="2">All Categories</option>
+					<option value="3">All Categories</option>
+					<option value="4">All Categories</option>
+					<option value="5">All Categories</option>
+					<option value="5">All Categories</option>
+					<option value="5">All Categories</option>
+					<option value="5">All Categories</option>
+					<option value="5">All Categories</option>
+					<option value="5">All Categoriesssssssssssssss</option>
+				</select>
+				<input type="text" id="searchInput" size="90" placeholder="Search by keywords or item" />
+				<input type="submit" class="searchButton" name="searchgsubmit" value="Search" />
+			</form>
+		</div>
+	</div>
+	<div class="clear"></div>
+
+	<!-- Hot Words -->
+	<div class="HotWords">
+		<nav class="NavHotWords">
+			<ul>
+				<li>Hot Words:</li>
+				<li><a href="">Tsuyoshi Nagabuchi</a></li>
+				<li><a href="">All Time Best 2014</a></li>
+				<li><a href="">Tsuyoshi Nagabuchi</a></li>
+				<li><a href="">All Time Best 2014</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="clear"></div>
+
+	<!-- Main Body -->
+	<div class="mainContainer">
+		<!-- Main Menu - Left Column-->
+		<div class="mainMenu">
+			<nav class="mainMenuList">
+				<ul>
+					<li><div class="arrow"></div><a href="">Fashion</a></li>
+					<li><div class="arrow"></div><a href="">Electronics & Hobby</a></li>
+					<li><div class="arrow"></div><a href="">Home & Garden</a></li>
+					<li><div class="arrow"></div><a href="">Beauty & Heath</a></li>
+					<li><div class="arrow"></div><a href="">Sports, Outdoors & Car</a></li>
+					<li><div class="arrow"></div><a href="">Food & Drink</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Slide - Small Middle Column -->
+		<div class="slide1">
+			<img src="img/slide1.gif" alt="">
+		</div>
+
+		<!-- Right Column -->
+		<div class="rightColumn">
+			<div class="login">
+				<button class="loginButton centerIMG"></button>
+				<img src="img/NewCustomer.gif" alt="Something" class="centerIMG">
+				<button class="signUp centerIMG"></button>
+				<div class="loginText">
+					<div class="redBold">Speed up &nbsp;</div> checkout process! <div class="redBold">Save and discount&nbsp;</div> with Rakuten Super Points!
+					<div class="right">
+						<a href="">Learn More</a><div class="loginArrow"></div>
+					</div>
+				</div>
+			</div>
+			<div class="package"></div>
+
+			<div class="alipay"></div>
+
+			<div class="slider2"></div>
+
+			<div class="textColumnRight">Popular Item</div>
+
+			<div class="popularItemBox">
+				<div class="popularItem">
+					<img src="img/cover.jpg" alt="" class="centerIMG">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>	
+				<div class="popularItem">
+					<img src="img/cover.jpg" alt="" class="centerIMG">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>				
+				<div class="popularItem">
+					<img src="img/cover.jpg" alt="" class="centerIMG">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>				
+				<div class="popularItem">
+					<img src="img/cover.jpg" alt="" class="centerIMG">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+
+			<div class="textColumnRight">Learning Center</div>
+
+			<div class="LearninCenter">
+				<a href="" id="LC1">International shipping information</a>
+				<a href="" id="LC2">How to shop on Rakuten</a>
+				<a href="" id="LC3">Forwarding services</a>
+			</div>
+		</div>
+
+		<!-- Main Middle Column -->
+		<div class="products">
+
+			<!-- Featured Products -->
+			<div class="category">Featured Products</div>
+			<div class="producItemBox">
+				<div class="producItem producItemSmall">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem lastOne">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+			
+			<!-- Hot Products in Watch -->
+			<div class="category">Hot Products in Watch</div>
+			<div class="producItemBox">
+				<div class="producItem producItemSmall">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem lastOne">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+
+			<!-- Hot Products in Sports -->
+			<div class="category">Hot Products in Sports</div>
+			<div class="producItemBox">
+				<div class="producItem producItemSmall">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem lastOne">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+
+			<!-- Hot Products in Cosme -->
+			<div class="category">Hot Products in Cosme</div>
+			<div class="producItemBox">
+				<div class="producItem producItemSmall">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem lastOne">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+		
+			<!-- Hot Products in Toy -->
+			<div class="category">Hot Products in Toy</div>
+			<div class="producItemBox">
+				<div class="producItem producItemSmall">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+
+				<div class="producItem lastOne">
+					<img src="img/cover.jpg" alt="">
+					<a href="">Tsuyoshi Nagabuchi</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+		
+	<div class="bottom1">
+		<div class="bottomBox">
+			<p>
+				Quick help
+				<a href="">Learn about membership</a>
+				<a href="">How to order</a>
+				<a href="">Payment information</a>
+				<a href="">Delivery and Shipping Rates</a>
+			</p>
+			<p>
+				About our company
+				<a href="">Company information</a>
+				<a href="">Investor relations</a>
+				<a href="">Career information</a>
+			</p>
+			<p>
+				Other languages
+				<a href="">日本語</a>
+				<a href="">中文(简体字)</a>
+				<a href="">中文(繁體字)</a>
+				<a href="">한국어</a>
+			</p>
+			<p>
+				Follow us on
+				<a href="">Twitter</a>
+				<a href="">Facebook</a>
+			</p>
+		</div>
+	</div>
+	<div class="bottom2">
+		<div class="bottomBox2">
+			<div class="bottomBox2title">All Category</div>
+			<p>
+				<a href="">Women's Clothing</a>
+				<a href="">Men's Clothing</a>
+				<a href="">Bags, Accessories & Designer Items</a>
+				<a href="">Shoes</a>
+				<a href="">Jewelry & Accessories</a>
+				<a href="">Watch</a>
+				<a href="">Underwear & Sleepwear</a>
+				<a href="">Kids, Baby & Maternity</a>
+				<a href="">Sports & Outdoors</a>
+				<a href="">Audio-Visual & Camera</a>
+				<a href="">Home Appliances</a>
+				<a href="">Toys, Hobbies & Games</a>
+				<a href="">Beauty, Cosmetics & Fragrances</a>
+				<a href="">Diet & Health</a>
+				<a href="">Medicine & Nursing Care</a>
+				<a href="">Household Supplies & Stationery</a>
+				<a href="">Kitchen, Dinerware, Cookware & Tools</a>
+				<a href="">CD, DVD & Music</a>
+				<a href="">Home Decor, Bedding & Shelves</a>
+				<a href="">Car/Motorcycle Supplies</a>
+				<a href="">Pet Food & Supplies</a>
+				<a href="">PCs and Peripherals</a>
+				<a href="">Flowers, Garden & DIY</a>
+				<a href="">Food</a>
+				<a href="">Sweets</a>
+				<a href="">Water & Soft Drinks</a>
+				<a href="">Sake</a>
+				<a href="">Alcohol</a>
+				<a href="" id="bottomBox2Last">Books</a>
+			</p>
+		</div>
+	</div>
+	<div class="bottom3">
+		<div class="bottomBox3">
+			<div class="bottomBox3title">Country/Region</div>
+			<p>
+				<a href="">Austria</a>
+				<a href="">Brazil</a>
+				<a href="">France</a>
+				<a href="">Germany</a>
+				<a href="">Indonesia</a>
+				<a href="">Japan</a>
+				<a href="">Malaysia</a>
+				<a href="">Singapore</a>
+				<a href="">Spain</a>
+				<a href="">Taiwan</a>
+				<a href="">Thailand</a>
+				<a href="">United Kingdom</a>
+				<a href="">United States</a>
+				<a href="" id="allRakuten">All Rakuten Services</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<a href="mailto:kafej666@gmail.com">Mail</a>
+		Copyright (c) 2014 Michael Zbyl. Demo purpose. All rights reserved.
+	</footer>
+</body>
+</html>
